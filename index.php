@@ -10,6 +10,10 @@
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
 		<!--自定义样式-->
 		<link rel="stylesheet" type="text/css" href="dist/css/min/index.min.css"/>
+		<!-- 引入字体图标 -->
+		<link rel="stylesheet" href="lib/fontawesome/css/fontawesome-all.min.css">
+		<!-- 引入页脚 -->
+		<link rel="stylesheet" href="dist/css/min/footer.min.css">
 		<!--兼容低版本的浏览器-->
 		<!--[if lt IE 9]>
 	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -18,65 +22,10 @@
 	</head>
 
 	<body>
-		<!--辅助导航-->
-		<nav class="navbar navbar-inverse">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<!--电话-->
-					<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone-alt"></span>028-86261949</a>
-				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<!--辅助导航-->
-						<li><a href="#">首页</a></li>
-						<li><a href="#">小强</a></li>
-						<li><a href="#">赶快充值</a></li>
-						<li><a href="#">注销</a></li>
-						<li><a href="#">帮助</a></li>
-						<li><a href="#">联系客服</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container-fluid -->
-		</nav>
-
-		<!--主导航-->
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<!--切换菜单-->
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_Menu" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				    </button>
-				    <!--LOGO-->
-					<a class="navbar-brand" href="#"><img src="static/images/logo.png"/></a>
-				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="main_Menu">
-					<ul class="nav navbar-nav">
-						<li class="active">
-							<a href="#">首页 </a>
-						</li>
-						<li><a href="#">我要投资</a></li>
-						<li><a href="#">我要借款</a></li>
-						<li><a href="#">个人中心</a></li>
-						<li><a href="#">新手指引</a></li>
-						<li><a href="#">关于我们</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container-fluid -->
-		</nav>
+		<!-- 引入头部 -->
+		<?php
+		   include_once("common/header.html");
+		?>
 
 		<!--轮播图-->
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -135,35 +84,35 @@
 			  	<h1>进行中借款</h1>
 			  	<p><a href="#">进入投资列表</a></p>
 			  </div>
-			  <table class="table table-hover">
+			  <table class="table el-table table-hover">
 			      <thead>
 			        <tr>
 			          <th>借款人</th>
-			          <th>借款标题</th>
+			          <th class="hidden620">借款标题</th>
 			          <th>年利率</th>
-                      <th>金额</th>
-                      <th>还款方式</th>
-                      <th>进度</th>
+								<th>金额</th>
+								<th class="hidden620">还款方式</th>
+								<th>进度</th>
 			          <th>操作</th>
 			        </tr>
 			      </thead>
 			      <tbody>
 			        <tr>
 			          <th scope="row">张三</th>
-			          <td>给我2000渡过难关</td>
+			          <td class="hidden620">给我2000渡过难关</td>
 			          <td>10.00%</td>
-                      <td>2000.00</td>
-                      <td>按月分期还款</td>
-                      <td>78.00%</td>
+								<td>2000.00</td>
+								<td class="hidden620">按月分期还款</td>
+								<td>78.00%</td>
 			          <td><button type="button" class="btn btn-sm btn-danger">查看</button></td>
 			        </tr>
 			        <tr>
 			          <th scope="row">王五</th>
-			          <td>江湖救急，借200块钱吃饭</td>
-                      <td>12.00%</td>
-                      <td>5000</td>
-			          <td>按月分期还款</td>
-                      <td>78.00%</td>
+			          <td class="hidden620">江湖救急，借200块钱吃饭</td>
+								<td>12.00%</td>
+								<td>5000</td>
+			          <td class="hidden620">按月分期还款</td>
+								<td>78.00%</td>
 			          <td><button type="button" class="btn btn-sm btn-danger">查看</button></td>
 			        </tr>
 			      </tbody>
@@ -248,36 +197,17 @@
 				</div>
 			</div>
 		</div>
-        <!--页脚-->
-        <div class="bs-example" data-example-id="default-well">
-            <div class="well">
-              <div class="container">
-                  <div class="row">
-                        <div class="left col-lg-6 col-md-6 col-xs-12">
-                            <p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
-                            <p>版权所有： 2006-2015成都源代码教育咨询有限公司</p>
-                            <p>地  址： 成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
-                            <p>电  话： 028-86261949  / 400-808-6840  邮箱： yuandaima@itsource.cn</p>
-                            <p>蜀ICP备14030149号-1  蜀公网安备510114990541</p>
-                        </div>
-                        <div class="right col-lg-6 col-md-6 col-xs-12">
-                            <div class="col-lg-6" id="wb">官方微博:
-                                <div><img src="static/images/tecent.png" alt=""></div>
-                                <div><img src="static/images/sina.png" alt=""></div>
-                            </div>
-                            <div class="col-lg-6" id="wx">官方微信:
-                                <div><img src="static/images/wx.jpg" alt=""></div>
-                            </div>
-                        </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-
+		<!--页脚-->
+        
+		<?php
+			include_once('common/footer.html')
+		?>
 
 	</body>
     <!--引入jquery库-->
     <script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
     <!--引入bootstrap核心js库-->
-    <script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- 引入header.js -->
+		<script src="dist/js/header.min.js"></script>
 </html>

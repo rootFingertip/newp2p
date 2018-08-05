@@ -2,57 +2,12 @@
 @colorBlue:#00a8ff;
 @bgPath:"../../../static/images/";
 
-//辅助导航
-.navbar{
-    border-radius:0px;
-    margin-bottom:0px;
-}
-.navbar-inverse{
-    .navbar-brand{
-        color: @colorWhite;
-        font-size: 26px;
-        
-        span{
-            font-size: 18px;
-            margin-right: 10px;
-        }
-    }
-    
-    .navbar-nav{
-        &>li{
-            &>a{
-                color:@colorWhite;
-                
-                &:hover{
-                    color: @colorBlue;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
-
-//主导航
-.navbar-default{
-
-    .navbar-nav{
-        &>li{
-            &>a{
-                line-height: 40px;
-                min-width: 80px;
-                font-size: 16px;
-                text-align: center;
-                
-                &:hover{
-                    background-color: #f0f0f0;
-                }
-            }
-        }
-    }
-}
+//引入页头
+@import url('header.less');
 
 //三大特色
 #feature{
+    margin-top: 10px;
     .row{
         
         div{
@@ -80,6 +35,12 @@
 #invest,#article{
     padding-right: 0px;
     padding-left: 0px;
+}
+
+@media all and (max-width: 620px) {
+    .hidden620 {
+      display: none;
+    }
 }
 //公共的panel
 .panel{
@@ -127,63 +88,14 @@
                     float: right;
                     color: #999;
                 }
+                &:hover{
+                    background-color: #eee;
+                    cursor: pointer;
+                }
             }
         }
     }
 }
 
 //页脚
-.well{
-    height: 230px;
-    padding: 0;
-    margin: 0;
-    .container{
-        padding-left: 0;
-        padding-right: 0;
-        & div{
-            padding: 0;
-            margin: 0
-        }
-    }
-
-    .row{
-        &>div{
-            height: 230px;
-        }
-        .left{
-            padding-top: 40px;
-            box-sizing: border-box;
-            p:nth-of-type(5){
-              color: #00a8ff;
-            }
-        }
-        .right{
-            padding-top: 40px;
-            box-sizing: border-box;
-            #wb{
-                padding-left: 190px;
-                div{
-                    width: 150px;
-                    height: 70px;
-                    img{
-                        width: 150px;
-                        height: 70px;
-                    }
-                }
-            }
-            #wx{
-                padding-left: 100px;
-                div{
-                    margin-top: 10px;
-                    width: 150px;
-                    height: 150px;
-                    img{
-                        width: 150px;
-                        height: 150px;  
-                    }
-                }
-            }
-        }
-        
-    }
-}
+@import url('footer.less');

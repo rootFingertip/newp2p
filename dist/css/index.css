@@ -17,6 +17,9 @@
   color: #00a8ff;
   text-decoration: underline;
 }
+.tooltip img {
+  width: 120px;
+}
 .navbar-default .navbar-nav > li > a {
   line-height: 40px;
   min-width: 80px;
@@ -25,6 +28,9 @@
 }
 .navbar-default .navbar-nav > li > a:hover {
   background-color: #f0f0f0;
+}
+#feature {
+  margin-top: 10px;
 }
 #feature .row div {
   background: url("../../../static/images/feature01.png") no-repeat left center;
@@ -44,6 +50,11 @@
 #article {
   padding-right: 0px;
   padding-left: 0px;
+}
+@media all and (max-width: 620px) {
+  .hidden620 {
+    display: none;
+  }
 }
 .panel {
   -webkit-box-shadow: none;
@@ -84,53 +95,20 @@
   float: right;
   color: #999;
 }
-.well {
-  height: 230px;
-  padding: 0;
-  margin: 0;
+.panel-default .panel-body ul li:hover {
+  background-color: #eee;
+  cursor: pointer;
 }
-.well .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-.well .container div {
-  padding: 0;
-  margin: 0;
-}
-.well .row > div {
-  height: 230px;
-}
-.well .row .left {
+footer {
+  background-color: #f8f8f8;
   padding-top: 40px;
-  box-sizing: border-box;
 }
-.well .row .left p:nth-of-type(5) {
-  color: #00a8ff;
+footer .row .m_t p {
+  margin-bottom: 20px;
 }
-.well .row .right {
-  padding-top: 40px;
-  box-sizing: border-box;
+footer .row .m_t p a:nth-of-type(2) {
+  margin-left: 70px;
 }
-.well .row .right #wb {
-  padding-left: 190px;
-}
-.well .row .right #wb div {
-  width: 150px;
-  height: 70px;
-}
-.well .row .right #wb div img {
-  width: 150px;
-  height: 70px;
-}
-.well .row .right #wx {
-  padding-left: 100px;
-}
-.well .row .right #wx div {
-  margin-top: 10px;
-  width: 150px;
-  height: 150px;
-}
-.well .row .right #wx div img {
-  width: 150px;
-  height: 150px;
+footer img {
+  max-width: 160px;
 }
