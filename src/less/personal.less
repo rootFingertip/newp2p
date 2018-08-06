@@ -1,0 +1,52 @@
+.main{
+    .row{
+        div{
+            &>ul{
+                list-style: none;
+                border: 1px solid #ddd;
+                border-top: none;
+                padding: 0;
+                margin: 10px 0 30px 0;
+                border-radius: 10px;
+                
+                &>li{
+                    background-color: #F5F5F5;
+                    border-top: 1px solid #ddd;
+                    line-height: 50px;
+                    text-indent: 2em;
+                    &>a{
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                    &>ul{
+                        padding: 0;
+                        margin: 0;
+                        border-top: 1px solid #ddd;  
+                        list-style: none;
+                        text-indent: 2em;
+                        background-color: #fff;
+                        li{
+                            a{
+                                text-decoration: none;
+                                cursor: pointer;
+                                margin-left: 20px;
+                            }
+                        }
+                        .active{
+                            background-color: #337ab7;
+                            a{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                &>li:first-child{
+                    border-radius: 10px 10px 0 0;
+                }
+                &>li:last-child{
+                    border-radius: 0 0 10px 10px;
+                }
+            }
+        }
+    }
+}
