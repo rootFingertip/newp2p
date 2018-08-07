@@ -1,0 +1,66 @@
+@colorWhite:#fff;
+@colorBlue:#00a8ff;
+@bgPath:"../../../static/images/";
+
+//引入页头
+@import url('header.less');
+
+//登录和注册的样式
+.panel{
+  margin-top: 20px;
+  
+  form{
+      width: 50%;
+      margin: 0px auto;
+      
+      .form-group,button{
+          margin: 10px 0;
+      }
+      
+      button{
+          width: 160px;
+      }
+  }
+}
+
+@media all and (max-width: 620px){
+    .panel{
+          form{
+              width: 100%;
+              
+              button{
+                  width: 100%;
+              }
+          }
+    }
+}
+
+
+//会员中心借款列表
+
+.panel-heading{
+    display: flex;
+    justify-content: space-between;
+       
+        a{
+            text-decoration: none;
+            color: #fff;
+        }      
+     }
+     
+     
+ //实名认证   
+ 
+ 
+#submitAuth{
+    margin-left: 200px;
+}
+
+
+
+
+
+
+
+//页脚
+@import url('footer.less');
