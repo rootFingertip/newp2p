@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 		<!--引入bootstrap核心样式-->
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+		
 		<!--自定义样式-->
 		<link rel="stylesheet" type="text/css" href="dist/css/min/userRegLogin.min.css"/>
 		<!-- 引入字体图标 -->
@@ -44,9 +45,7 @@
 							<label for="password1">登录密码</label>
 							<input type="password" class="form-control" name="password1" id="password1" placeholder="">
 						</div>
-						<button type="submit" class="btn btn-danger">
-						立即登录
-						</button>
+						<button type="submit" class="btn btn-danger">立即登录</button><a href="register.php">没有账号，立即去注册</a>
 					</form>
 				</div>
 			</div>
@@ -66,4 +65,5 @@ include_once('common/footer.html')
 	<script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<!-- 引入header.js -->
 	<script src="dist/js/header.min.js"></script>
+	
 </html>
