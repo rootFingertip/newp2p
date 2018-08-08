@@ -33,7 +33,7 @@
   margin-top: 20px;
 }
 .panel form {
-  width: 50%;
+  width: 60%;
   margin: 0px auto;
 }
 .panel form .form-group,
@@ -59,8 +59,22 @@
   text-decoration: none;
   color: #fff;
 }
-#submitAuth {
-  margin-left: 200px;
+#text-center {
+  text-align: center;
+}
+#idCardText {
+  display: flex;
+}
+#idCardText .idCardItem {
+  width: 160px;
+  height: 150px;
+  margin-right: 10px;
+  border: 1px solid #e3e3e3;
+  text-align: center;
+  padding: 5px;
+}
+#idCardText p {
+  line-height: 150px;
 }
 footer {
   background-color: #f8f8f8;
