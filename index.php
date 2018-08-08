@@ -12,8 +12,6 @@
 		<link rel="stylesheet" type="text/css" href="dist/css/min/index.min.css"/>
 		<!-- 引入字体图标 -->
 		<link rel="stylesheet" href="lib/fontawesome/css/fontawesome-all.min.css">
-		<!-- 引入页脚 -->
-		<link rel="stylesheet" href="dist/css/min/footer.min.css">
 		<!--兼容低版本的浏览器-->
 		<!--[if lt IE 9]>
 	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
