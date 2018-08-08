@@ -102,11 +102,12 @@ $(document).ready(function() {
                       
             if (result.isSuccess) {
             	
-				//点击立即注册，倒计时5秒跳转，显示蒙层
-				$("#regLoginModal .modal-body").html("<span class='glyphicon glyphicon-ok text-danger'></span>"+result.msg+"等待 <span id='timeCount'>5</span>秒后自动跳转");
+				//点击立即注册，倒计时3秒跳转，显示蒙层
+				$("#regLoginModal .modal-body").html("<span class='glyphicon glyphicon-ok text-success'></span>"+result.msg+"等待 <span id='timeCount'>3</span>秒后自动跳转");
+				
 				
 				//倒计时效果的实现
-				$num=5;
+				$num=3;
 				$timeId=setInterval(function(){
 					$num--;
 					$("#timeCount").text($num);
