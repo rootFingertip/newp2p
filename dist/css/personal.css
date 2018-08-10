@@ -1,49 +1,58 @@
-.main .row div > ul {
-  list-style: none;
-  border: 1px solid #ddd;
-  border-top: none;
-  padding: 0;
-  margin: 10px 0 30px 0;
-  border-radius: 10px;
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
 }
-.main .row div > ul > li {
-  background-color: #F5F5F5;
-  border-top: 1px solid #ddd;
-  line-height: 35px;
-  text-indent: 2em;
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  font-size: 26px;
 }
-.main .row div > ul > li > a {
-  text-decoration: none;
-  cursor: pointer;
+.navbar-inverse .navbar-brand span {
+  font-size: 18px;
+  margin-right: 10px;
 }
-.main .row div > ul > li > ul {
-  padding: 0;
-  margin: 0;
-  border-top: 1px solid #ddd;
-  list-style: none;
-  text-indent: 2em;
-  background-color: #fff;
-}
-.main .row div > ul > li > ul li a {
-  text-decoration: none;
-  cursor: pointer;
-  margin-left: 20px;
-}
-.main .row div > ul > li > ul .active {
-  background-color: #337ab7;
-}
-.main .row div > ul > li > ul .active a {
+.navbar-inverse .navbar-nav > li > a {
   color: #fff;
 }
-.main .row div > ul > li:first-child {
-  border-radius: 10px 10px 0 0;
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #00a8ff;
+  text-decoration: underline;
 }
-.main .row div > ul > li:last-child {
-  border-radius: 0 0 10px 10px;
+.tooltip img {
+  width: 120px;
+}
+.navbar-default .navbar-nav > li > a {
+  line-height: 40px;
+  min-width: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #f0f0f0;
+}
+.main .row {
+  margin: 20px 0 50px 0;
+}
+.main .row #accordion .panel-title a {
+  color: #23527c;
+}
+.main .row #accordion .panel-body .proClick {
+  list-style: none;
+  padding: 0;
+}
+.main .row #accordion .panel-body .proClick li {
+  line-height: 30px;
+}
+.main .row #accordion .panel-body .proClick li.active {
+  background-color: #337ab7;
+}
+.main .row #accordion .panel-body .proClick li.active a {
+  color: #fff;
+}
+.main .row #accordion .panel-body .proClick li a {
+  cursor: pointer;
 }
 .main .row .rMessage {
   border: 1px solid #ddd;
-  margin-top: 10px;
   border-radius: 10px;
   padding: 10px 0 0 10px;
 }
@@ -114,4 +123,17 @@
 .main .row .rMessage .bt .shot .mb {
   margin-bottom: 3px;
   font-weight: bold;
+}
+footer {
+  background-color: #f8f8f8;
+  padding-top: 40px;
+}
+footer .row .m_t p {
+  margin-bottom: 20px;
+}
+footer .row .m_t p a:nth-of-type(2) {
+  margin-left: 70px;
+}
+footer img {
+  max-width: 160px;
 }

@@ -1,53 +1,34 @@
+//引入页头
+@import url('header.less');
+
 //公共类
 @border: 1px solid #ddd;
 
 .main{
     .row{
-        div{
-            &>ul{
-                list-style: none;
-                border: @border;
-                border-top: none;
-                padding: 0;
-                margin: 10px 0 30px 0;
-                border-radius: 10px;
-                
-                &>li{
-                    background-color: #F5F5F5;
-                    border-top: @border;
-                    line-height: 35px;
-                    text-indent: 2em;
-                    &>a{
-                        text-decoration: none;
-                        cursor: pointer;
-                    }
-                    &>ul{
-                        padding: 0;
-                        margin: 0;
-                        border-top: @border;  
-                        list-style: none;
-                        text-indent: 2em;
-                        background-color: #fff;
-                        li{
-                            a{
-                                text-decoration: none;
-                                cursor: pointer;
-                                margin-left: 20px;
-                            }
-                        }
-                        .active{
+        margin: 20px 0 50px 0;
+        #accordion{
+            .panel-title{
+                a{
+                    color: #23527c;
+                }
+            }
+            .panel-body{
+                .proClick{
+                    list-style: none;
+                    padding: 0;
+                    li{
+                        line-height: 30px;
+                        &.active{
                             background-color: #337ab7;
                             a{
                                 color: #fff;
                             }
                         }
+                        a{
+                            cursor: pointer;
+                        }
                     }
-                }
-                &>li:first-child{
-                    border-radius: 10px 10px 0 0;
-                }
-                &>li:last-child{
-                    border-radius: 0 0 10px 10px;
                 }
             }
         }
@@ -55,8 +36,6 @@
         //右侧部分开始
         .rMessage{
             border: @border;
-            // height: 500px;
-            margin-top: 10px;
             border-radius: 10px;
             padding: 10px 0 0 10px;
 
@@ -142,3 +121,6 @@
         }
     }
 }
+
+//页脚
+@import url('footer.less');
