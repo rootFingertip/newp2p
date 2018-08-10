@@ -1,6 +1,6 @@
 $(function(){
 	//前端的所有页面的登录状态的菜单定制
-	$.get("api/checkState.php",function (result) {
+	$.get("API/checkState.php",function (result) {
 	var htmlStr;
 	
 	//登录成功后显示的菜单是：会员中心、赶快充值 、注销
