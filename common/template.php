@@ -40,6 +40,5 @@
     <script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
     <!--引入bootstrap核心js库-->
 	<script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-		<!-- 引入header.js -->
-    <script src="dist/js/header.min.js"></script>
+		
 </html>
