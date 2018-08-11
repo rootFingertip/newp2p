@@ -22,11 +22,6 @@
 	</head>
 
 	<body>
-		<!-- 引入头部 -->
-		<?php
-		include_once ("common/header.html");
-		?>
-
 		<!-- 实名认证内容开始 -->
 		<div class="container">
 			<div class="panel panel-default">
@@ -134,11 +129,6 @@
 		</div>
 		<!-- 内容结束 -->
 
-		<!--页脚-->
-
-		<?php
-		include_once('common/footer.html')
-		?>
 	</body>
 	<!--引入jquery库-->
 	<script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>

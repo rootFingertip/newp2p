@@ -184,12 +184,13 @@ $(document).ready(function() {
             
             // 使用ajax发送提交表单的数据请求
             var postUrl="API/checkLogin.php";
-            console.log(postUrl);
+            // console.log(postUrl);
             var postData=$form.serialize();
             // alert(1);
             $.post(postUrl,postData,function(result){
                 console.log(result);
                 if(result.isSuccess){
+                    alert("登录成功");
                     location.href ='personal.php';
                 }else{
                     alert(result.msg);

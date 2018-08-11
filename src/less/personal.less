@@ -4,6 +4,11 @@
 //公共类
 @border: 1px solid #ddd;
 
+//横向出现滚动条
+body{
+    overflow-x: hidden;
+}
+
 .main{
     .row{
         margin: 20px 0 50px 0;
@@ -35,6 +40,7 @@
 
         //右侧部分开始
         .rMessage{
+            position: relative;
             border: @border;
             border-radius: 10px;
             padding: 10px 0 0 10px;
@@ -56,7 +62,7 @@
                 }
                 &>div:last-child{
                     padding: 15px 0 0 0;
-                    margin-left: -25px;
+                    // margin-left: -25px;
                 }
                 
             }
@@ -118,7 +124,44 @@
                     }
                 }
             }
+            #toggleMenu{
+                position: absolute;
+                display: none;
+                left: 0px;
+                top: 0px;
+            }
         }
+    }
+}
+
+
+@media all and (max-width: 768px){
+    #mainContent{
+        position: relative;
+        left: 0px; //菜单展开的状态
+        transition: all 0.8s ease-in-out;
+        
+        min-height: 900px;
+        
+        
+        #leftMenu{
+            position: absolute;
+            left: 0px;
+        }
+        
+        #rightCon{
+            #toggleMenu{
+                display: inline-block;
+            }
+                
+            position: absolute;
+            right: -50%;
+        }
+    }
+    
+    //菜单收起的状态
+    #mainContent.active{
+        left: -50%;
     }
 }
 

@@ -27,10 +27,10 @@
        
         <!-- 内容开始 -->
 
-        <div class="container main">
+        <div class="container main" id="mainContent">
             <div class="row"> 
                 <!-- 左边部分 -->
-                <div class="col-lg-3">
+                <div class="col-md-3  col-sm-3 col-xs-6" id="leftMenu">
 					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 						<div class="panel panel-default">
 							<div class="panel-heading" role="tab" id="headingOne">
@@ -109,13 +109,13 @@
 					
                 </div>
                 <!-- 右边部分 -->
-                <div class="rMessage col-lg-9">
+                <div class="rMessage col-md-9 col-sm-9 col-xs-12" id="rightCon">
 					<!-- 顶部 -->
 					<div class="rMessage_top">
-						<div class="col-lg-2">
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
 							<img src="static/images/head_icon.jpg" alt="" class="img-thumbnail">
 						</div>
-						<div class="col-lg-10">
+						<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
 							<p>昵 称：<span>源代码教育</span></p>
 							<p>用户名：<span>小强</span></p>
 							<p>最后登录时间：<span>2016-10-25 15:30:10</span></p>
@@ -124,16 +124,16 @@
 					<!-- 底部 -->
 					<div class="rMessage_btm">
 						<div class="money">
-							<p class="col-lg-4">总金额：<span>10000元</span></p>
-							<p class="col-lg-4">可用金额：
+							<p class="col-lg-4 col-md-4 col-sm-4 col-xs-6">总金额：<span>10000元</span></p>
+							<p class="col-lg-4 col-md-4 col-sm-4 col-xs-6">可用金额：
 								<span>8000元</span><br>
 								<button type="button" class="btn btn-primary btn-lg form-inline">账户充值</button>
 								<button type="button" class="btn btn-danger btn-lg form-inline">账户提现</button>		
 							</p>
-							<p class="col-lg-4">冻结金额：<span>2000元</span></p>
+							<p class="col-lg-4 col-md-4 col-sm-4 col-xs-6">冻结金额：<span>2000元</span></p>
 						</div>
 						<div class="verify">
-							<div class="col-sm-4">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 								<div class="shot">
 									<div><img src="static/images/shiming.png" alt=""></div>
 									<div>
@@ -143,7 +143,7 @@
 								</div>
 								<p>实名认证之后才能在平台投资</p>
 							</div>
-							<div class="col-sm-4">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 								<div class="shot">
 									<div><img src="static/images/shouji.jpg" alt=""></div>
 									<div>
@@ -153,7 +153,7 @@
 								</div>
 								<p>实名认证之后才能在平台投资</p>
 							</div>
-							<div class="col-sm-4">
+							<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 								<div class="shot">
 									<div><img src="static/images/youxiang.jpg" alt=""></div>
 									<div>
@@ -165,7 +165,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-4 bt">
+					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 bt">
 						<div class="shot">
 							<div><img src="static/images/baozhan.jpg" alt=""></div>
 							<div>
@@ -175,10 +175,10 @@
 						</div>
 						<p>实名认证之后才能在平台投资</p>
 					</div>
+					<button type="button" id="toggleMenu" class="btn btn-primary btn-xs">菜单切换</button>
 				</div>
-            </div>
-        </div>
-
+			</div>
+        </div>   
         <!-- 内容结束 -->
 
 
@@ -194,8 +194,10 @@
 	<script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<!-- 引入header.js -->
 	<script src="dist/js/header.min.js"></script>
-
+     
 	<!-- 引入personal.js -->
 	<script src="dist/js/checkLogin.min.js"></script>
+	<!-- 引入自定义效果 -->
+	<script src="dist/js/p2pEffects.min.js"></script>
 
 </html>
