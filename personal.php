@@ -12,6 +12,10 @@
         <link rel="stylesheet" href="lib/fontawesome/css/fontawesome-all.min.css">
         <!-- 引入parsonal -->
         <link rel="stylesheet" href="dist/css/min/personal.min.css">
+        	<!-- 引入页头 -->
+		<link rel="stylesheet" href="dist/css/min/header.min.css">
+        <!-- 引入页脚 -->
+		<link rel="stylesheet" href="dist/css/min/footer.min.css">
 		<!--兼容低版本的浏览器-->
 		<!--[if lt IE 9]>
 	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
