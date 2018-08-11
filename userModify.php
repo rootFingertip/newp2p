@@ -14,7 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="dist/css/min/userRegLogin.min.css"/>
 		<!-- 引入字体图标 -->
 		<link rel="stylesheet" href="lib/fontawesome/css/fontawesome-all.min.css">
-		
+		<!-- 引入页脚 -->
+		<link rel="stylesheet" href="dist/css/min/footer.min.css">
 		<!--兼容低版本的浏览器-->
 		<!--[if lt IE 9]>
 		<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -38,14 +39,7 @@
 					    <label for="username">用户账号</label>
 					    <input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名">
 					  </div>
-					  <div class="form-group">
-					    <label for="password1">登录密码</label>
-					    <input type="password" class="form-control" name="password1" id="password1" placeholder="">
-					  </div>
-					   <div class="form-group">
-					    <label for="password2">确认密码</label>
-					    <input type="password" class="form-control" name="password2" id="password2" placeholder="">
-					  </div>
+					  
 					  <div class="form-group">
 					    <label for="realname">真实姓名</label>
 					    <input type="text" class="form-control" name="realname" id="realname" placeholder="请输入姓名">
@@ -63,13 +57,47 @@
 						  <input type="radio" name="sex" value="女">女
 						</label>
 					  </div>
-					  <div class="form-group checkbox">
-					    <label>
-					      <input type="checkbox" name="isAgree">同意注册协议
-					    </label>
+					  <div class="form-group">
+							    <label for="">身份证号</label>
+							     <input type="text" class="form-control" name="mobile" id="mobile" placeholder="请输入手机号码">
+							  </div>
+					  <div class="form-group">
+					    <label for="">联系电话</label>
+					      <input type="text" class="form-control" name="mobile" id="mobile" placeholder="请输入手机号码">
 					  </div>
-					  <button type="submit" class="btn btn-danger">立即注册</button>
-					  <a href="login.php">已有账号，立即去登录</a>
+					  <div class="form-group">
+					    <label for="">电子邮件</label>
+					      <input type="text" class="form-control" name="mobile" id="email">
+					  </div>
+					  <div class="form-group">
+					    <label for="education">个人学历</label>
+					    <select name="education" id="education" class="form-control">
+						  <option>博士</option>
+						  <option>硕士</option>
+						  <option>本科</option>
+						  <option>大专</option>
+						  <option>高中/中专</option>
+						  <option>初中</option>
+						  <option>小学</option>
+						</select>
+					  </div>
+					  <div class="form-group">
+					    <label for="">个人收入</label>
+					    <select class="form-control" name="salaryLevel" style="width: 250px">
+							<option value="1">1000元以下</option>
+							<option value="2">1000元-1999元</option>
+							<option value="3">2000元-2999元</option>
+							<option value="4">3000-4999</option>
+							<option value="5">5000-8999</option>
+							<option value="6">10000以上</option>
+						</select>
+					  </div>
+					  <div class="form-group">
+					    <label for="">联系地址</label>
+					      <input type="text" class="form-control" id="address" >
+					  </div>
+					  <button type="submit" class="btn btn-danger">修改</button>
+				
 					  
 				</form>
 			  </div>

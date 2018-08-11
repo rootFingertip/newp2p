@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="lib/fontawesome/css/fontawesome-all.min.css">
         <!-- 引入parsonal -->
         <link rel="stylesheet" href="dist/css/min/personal.min.css">
-        
+       
 		<!--兼容低版本的浏览器-->
 		<!--[if lt IE 9]>
 	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -105,8 +105,8 @@
 									</a>
 								</h4>
 							</div>
-						</div>
-						<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+							
+							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
 								<div class="panel-body">
 									<ul class="proClick">
 										<li><a href="userModify.php">修改资料</a></li>
@@ -114,77 +114,23 @@
 									</ul>
 								</div>
 							</div>
+						</div>
 					</div>
 					
                 </div>
                 <!-- 右边部分 -->
                 <div class="rMessage col-lg-9">
-					<!-- 顶部 -->
-					<div class="rMessage_top">
-						<div class="col-lg-2">
-							<img src="static/images/head_icon.jpg" alt="" class="img-thumbnail">
+                	<div class="panel-body">
+	                	<div class="row">
+
+							<!-- 顶部 -->
+							<h2 class="text-center text-primary tex">用户学历情况统计</h2>
+							<!-- 底部 -->
+							<div id="echartsMain" style="width: 100%;height:400px;"></div>
 						</div>
-						<div class="col-lg-10">
-							<p>昵 称：<span>源代码教育</span></p>
-							<p>用户名：<span>小强</span></p>
-							<p>最后登录时间：<span>2016-10-25 15:30:10</span></p>
-						</div>
-					</div>
-					<!-- 底部 -->
-					<div class="rMessage_btm">
-						<div class="money">
-							<p class="col-lg-4">总金额：<span>10000元</span></p>
-							<p class="col-lg-4">可用金额：
-								<span>8000元</span><br>
-								<button type="button" class="btn btn-primary btn-lg form-inline">账户充值</button>
-								<button type="button" class="btn btn-danger btn-lg form-inline">账户提现</button>		
-							</p>
-							<p class="col-lg-4">冻结金额：<span>2000元</span></p>
-						</div>
-						<div class="verify">
-							<div class="col-sm-4">
-								<div class="shot">
-									<div><img src="static/images/shiming.png" alt=""></div>
-									<div>
-										<p class="mb">实名认证</p>
-										<p>未认证<a href="#">马上认证</a></p>
-									</div>
-								</div>
-								<p>实名认证之后才能在平台投资</p>
-							</div>
-							<div class="col-sm-4">
-								<div class="shot">
-									<div><img src="static/images/shouji.jpg" alt=""></div>
-									<div>
-										<p class="mb">手机认证</p>
-										<p>未认证<a href="#">马上认证</a></p>
-									</div>
-								</div>
-								<p>实名认证之后才能在平台投资</p>
-							</div>
-							<div class="col-sm-4">
-								<div class="shot">
-									<div><img src="static/images/youxiang.jpg" alt=""></div>
-									<div>
-										<p class="mb">邮箱认证</p>
-										<p>未认证<a href="#">马上认证</a></p>
-									</div>
-								</div>
-								<p>实名认证之后才能在平台投资</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4 bt">
-						<div class="shot">
-							<div><img src="static/images/baozhan.jpg" alt=""></div>
-							<div>
-								<p class="mb">VIP会员</p>
-								<p>未认证<a href="#">马上认证</a></p>
-							</div>
-						</div>
-						<p>实名认证之后才能在平台投资</p>
 					</div>
 				</div>
+				
             </div>
         </div>
 
@@ -201,10 +147,12 @@
     <script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
     <!--引入bootstrap核心js库-->
 	<script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	<!-- 引入header.js -->
-	<script src="dist/js/header.min.js"></script>
-
+	
 	<!-- 引入personal.js -->
 	<script src="dist/js/checkLogin.min.js"></script>
+	<!-- 引入 ECharts 文件 -->
+	<script src="lib/echarts/echarts-all.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 引入 eduEcharts.js 文件 -->
+	<script src="src/javascript/eduEcharts.js"></script>
 
 </html>

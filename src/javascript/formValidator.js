@@ -130,6 +130,8 @@ $(document).ready(function() {
               }, 'json');
         });
 
+
+
          //对那个表单做验证：登录表单
     	$('#loginForm')
         //调用验证方法，验证方法中是一个配置对象
