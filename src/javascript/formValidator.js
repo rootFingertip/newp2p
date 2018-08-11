@@ -189,8 +189,8 @@ $(document).ready(function() {
             var postData=$form.serialize();
            
             $.post(postUrl,postData,function(result){
-//              console.log("服务器返回结果",result);
                 if(result.isSuccess){    
+                    alert("登录成功");
                     location.href ='personal.php';
                 }else{
                     alert(result.msg);

@@ -29,6 +29,9 @@
 .navbar-default .navbar-nav > li > a:hover {
   background-color: #f0f0f0;
 }
+body {
+  overflow-x: hidden;
+}
 .main .row {
   margin: 20px 0 50px 0;
 }
@@ -52,6 +55,7 @@
   cursor: pointer;
 }
 .main .row .rMessage {
+  position: relative;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 10px 0 0 10px;
@@ -73,7 +77,6 @@
 }
 .main .row .rMessage .rMessage_top > div:last-child {
   padding: 15px 0 0 0;
-  margin-left: -25px;
 }
 .main .row .rMessage .rMessage_btm {
   padding: 10px 0 0 0;
@@ -123,6 +126,34 @@
 .main .row .rMessage .bt .shot .mb {
   margin-bottom: 3px;
   font-weight: bold;
+}
+.main .row .rMessage #toggleMenu {
+  position: absolute;
+  display: none;
+  left: 0px;
+  top: 0px;
+}
+@media all and (max-width: 768px) {
+  #mainContent {
+    position: relative;
+    left: 0px;
+    transition: all 0.8s ease-in-out;
+    min-height: 900px;
+  }
+  #mainContent #leftMenu {
+    position: absolute;
+    left: 0px;
+  }
+  #mainContent #rightCon {
+    position: absolute;
+    right: -50%;
+  }
+  #mainContent #rightCon #toggleMenu {
+    display: inline-block;
+  }
+  #mainContent.active {
+    left: -50%;
+  }
 }
 footer {
   background-color: #f8f8f8;
