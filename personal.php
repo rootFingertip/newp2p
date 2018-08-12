@@ -110,6 +110,7 @@
 								<div class="panel-body">
 									<ul class="proClick">
 										<li><a href="userModify.php">修改资料</a></li>
+										<li><a href="userInfo.php">平台运营</a></li>
 										<li><a href="userEduStatistics.php">用户学历统计</a></li>
 									</ul>
 								</div>
