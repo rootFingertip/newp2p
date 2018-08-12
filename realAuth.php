@@ -39,7 +39,7 @@
                     ?>	
                 </div>
                 <!-- 右边部分 -->
-                <!-- <div class="rMessage col-md-9 col-sm-9 col-xs-12" id="rightCon"> -->
+                 <div class="rMessage col-md-9 col-sm-9 col-xs-12" id="rightCon"> 
 					
                     <!-- <iframe name="mainPlace" src="#" width="100%" height="600px" frameborder="0" scrolling="auto"></iframe> -->
                     <!-- 实名认证内容开始 -->
@@ -144,7 +144,7 @@
                     </div>
                 <!-- 内容认证结束 -->
                     
-				<!-- </div> -->
+				 </div> 
 			</div>
         </div>   
         <!-- 内容结束 -->

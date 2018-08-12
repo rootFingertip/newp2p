@@ -62,38 +62,40 @@
 								</div>
 								<form id="borrowForm" class="form-horizontal el-borrow-form" method="post">
 									<div class="form-group">
-										<label class="control-label">
+										<label class="col-sm-2 control-label">
 											借款类型
 										</label>
-										<select class="form-control" name="borrowType">
-											<option value="1">信用贷</option>
-											<option value="2">车易贷</option>
-											<option value="3">房易贷</option>
-										</select>
+										<div class="col-sm-8  input-group">
+											<select class="form-control" name="borrowType">
+												<option value="1">信用贷</option>
+												<option value="2">车易贷</option>
+												<option value="3">房易贷</option>
+											</select>
+										</div>
 									</div>
 									<div class="form-group">
-										<label class="control-label">
+										<label class="col-sm-2 control-label">
 											借款金额
 										</label>
-										<div class="input-group">
-											<input class="form-control" name="borrowAmount" />
+										<div class="col-sm-8  input-group">
+											<input class="form-control" name="bidRequestAmount" />
 											<span class="input-group-addon">元</span>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="control-label">
+										<label class="col-sm-2 control-label">
 											借款利息
 										</label>
-										<div class="input-group">
+										<div class="col-sm-8  input-group">
 											<input class="form-control" name="currentRate" />
 											<span class="input-group-addon">%</span>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="control-label">
+										<label class="col-sm-2 control-label">
 											借款期限
 										</label>
-										<div class="input-group">
+										<div class="col-sm-8 input-group">
 											<select class="form-control" name="monthes2Return">
 												<option value="1">1</option>
 												<option value="3">3</option>
@@ -105,9 +107,9 @@
 											<span class="input-group-addon">月</span>
 										</div>
 									</div>
-					
+										
 									<div class="form-group">
-										<label class="control-label">
+										<label class="col-sm-2 control-label">
 											还款方式
 										</label>
 										<label class="radio-inline">
@@ -121,38 +123,38 @@
 									</div>
 					
 									<div class="form-group">
-										<label class="control-label">
+										<label class="col-sm-2 control-label">
 											最小投标
 										</label>
-										<div class="input-group">
+										<div class="input-group col-sm-8">
 											<input class="form-control" name="minAmount" />
 											<span class="input-group-addon">元</span>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="control-label">
+										<label class="col-sm-2 control-label">
 											最大投标
 										</label>
-										<div class="input-group">
+										<div class="input-group col-sm-8">
 											<input class="form-control" name="maxAmount" />
 											<span class="input-group-addon">元</span>
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="control-label">
+										<label class="col-sm-2 control-label">
 											投标奖金
 										</label>
-										<div class="input-group">
+										<div class="input-group col-sm-8">
 											<input class="form-control" name="rewardAmount" value="0" />
 											<span class="input-group-addon">%</span>
 										</div>
 									</div>
 									
 									<div class="form-group">
-										<label class="control-label">
+										<label class="col-sm-2 control-label">
 											招标天数
 										</label>
-										<div class="input-group">
+										<div class="input-group col-sm-8">
 											<select class="form-control" name="disableDays">
 												<option value="1">1</option>
 												<option value="2">2</option>
@@ -171,13 +173,15 @@
 										</div>
 									</div>
 									<div class="form-group">
-										<label class="control-label">
+										<label class="col-sm-2 control-label">
 											借款标题
 										</label>
-										<input name="borrowTitle" class="form-control" />
+										<div class="input-group col-sm-8">
+										   <input name="borrowTitle" class="form-control" />
+										</div>
 									</div>
 									<div class="form-group">
-										<label>
+										<label  class="col-sm-2 control-label">
 											借款描述
 										</label>
 										<textarea name="description" rows="4" class="form-control col-sm-6" style="resize: none;"></textarea>
