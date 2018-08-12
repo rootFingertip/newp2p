@@ -59,6 +59,21 @@
   text-decoration: none;
   color: #fff;
 }
+#mainContent .padd_0 {
+  padding: 0;
+}
+#idCardText {
+  display: flex;
+}
+#idCardText .idCardItem {
+  width: 160px;
+  height: 150px;
+  border: 1px solid #e3e3e3;
+  text-align: center;
+}
+#idCardText p {
+  line-height: 150px;
+}
 #regLoginModal .modal-body span {
   font-size: 20px;
   font-weight: bold;

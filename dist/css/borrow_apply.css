@@ -1,0 +1,69 @@
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  font-size: 26px;
+}
+.navbar-inverse .navbar-brand span {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #00a8ff;
+  text-decoration: underline;
+}
+.tooltip img {
+  width: 120px;
+}
+.navbar-default .navbar-nav > li > a {
+  line-height: 40px;
+  min-width: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #f0f0f0;
+}
+#mainContent .rMessage {
+  border: none;
+}
+#mainContent .padd_0 {
+  padding: 0;
+}
+#mainContent .padd_0 .panel-body {
+  padding: 0;
+}
+#mainContent .padd_0 .panel-body .row {
+  margin-top: 0;
+}
+.el-tip-info {
+  padding: 20px;
+  background-color: #F4F8FA;
+  border-left: 2px solid #0099DD;
+  margin-bottom: 20px;
+}
+.el-tip-info h3 {
+  color: #09d;
+}
+#borrowForm {
+  width: 60%;
+  margin: 0px auto;
+}
+footer {
+  background-color: #f8f8f8;
+  padding-top: 40px;
+}
+footer .row .m_t p {
+  margin-bottom: 20px;
+}
+footer .row .m_t p a:nth-of-type(2) {
+  margin-left: 70px;
+}
+footer img {
+  max-width: 160px;
+}
