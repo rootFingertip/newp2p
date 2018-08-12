@@ -39,7 +39,7 @@
                                 <li>身份认证</li>
                                 <li>视频认证</li>
                             </ul>
-                            <a href="#" class="btn btn-info">立刻申请</a>
+                            <a href="borrow_apply.php" class="btn btn-info">立刻申请</a>
                         </div>
                     </div>
                     <div class="panel  col-lg-4 col-md-4 col-sm-6">
@@ -53,7 +53,7 @@
                                 <li>身份认证</li>
                                 <li>视频认证</li>
                             </ul>
-                            <a href="#" class="btn btn-info">立刻申请</a>
+                            <a href="borrow_apply.php" class="btn btn-info">立刻申请</a>
                         </div>
                     </div>
                     <div class="panel  col-lg-4 col-md-4 col-sm-6">
@@ -67,7 +67,7 @@
                                 <li>身份认证</li>
                                 <li>视频认证</li>
                             </ul>
-                            <a href="#" class="btn btn-info">立刻申请</a>
+                            <a href="borrow_apply.php" class="btn btn-info">立刻申请</a>
                         </div>
                     </div>
                 </div>

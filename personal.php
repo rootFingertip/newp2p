@@ -34,7 +34,7 @@
 					<?php
 						include_once ("./leftMenuTree.html");
 					?>	
-                </div>
+				</div>
                 <!-- 右边部分 -->
                 <div class="rMessage col-md-9 col-sm-9 col-xs-12" id="rightCon">
 					<!-- 顶部 -->
